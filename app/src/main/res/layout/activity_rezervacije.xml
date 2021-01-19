@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/search_back"
+    tools:context=".Logins"
+    android:id="@+id/loginFragment"
+    >
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:maxLines="10"
+        android:paddingLeft="50dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:shadowColor="#000000"
+        android:shadowDx="-2"
+        android:shadowDy="-2"
+        android:shadowRadius="10"
+
+        android:text="Rezervacije"
+        android:textColor="@color/white"
+        android:textSize="36sp"
+        android:textStyle="bold"
+
+        />
+    <Spinner
+        android:id="@+id/spiner1"
+        android:layout_width="150dp"
+
+        android:layout_height="wrap_content"
+        android:background="@drawable/login_dugme"
+
+        android:popupBackground="@drawable/login_dugme"
+
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="15dp"
+        android:paddingHorizontal="18dp"
+        android:paddingVertical="5dp"
+       />
+
+    <Spinner
+        android:id="@+id/spiner2"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/login_dugme"
+        android:popupBackground="@drawable/login_dugme"
+
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="15dp"
+
+        android:paddingHorizontal="18dp"
+        android:paddingVertical="5dp"
+
+        />
+
+    <Spinner
+        android:id="@+id/spiner3"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/login_dugme"
+        android:popupBackground="@drawable/login_dugme"
+
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="15dp"
+
+        android:paddingHorizontal="18dp"
+        android:paddingVertical="5dp"
+
+        />
+
+    <Button
+        android:id="@+id/potvrdi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="REZERVIŠI"
+        android:textStyle="bold"
+        android:textSize="23sp"
+        android:paddingHorizontal="100dp"
+        android:paddingVertical="15dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="120dp"
+        android:textColor="@color/white"
+        android:background="@drawable/login_dugme"
+        />
+
+
+</LinearLayout>

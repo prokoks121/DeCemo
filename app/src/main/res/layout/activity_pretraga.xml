@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/search_back"
+    tools:context=".Pretraga">
+
+
+
+
+    <androidx.core.widget.NestedScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true" >
+
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:stretchColumns="1">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+
+                >
+
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:maxLines="10"
+                    android:paddingLeft="50dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:shadowColor="#000000"
+                    android:shadowDx="-2"
+                    android:shadowDy="-2"
+                    android:shadowRadius="10"
+
+                    android:text="Pronađite\nvaš omiljeni lokal"
+                    android:textColor="@color/white"
+                    android:textSize="36sp"
+                    android:textStyle="bold"
+
+                    />
+
+                <AutoCompleteTextView
+                    android:id="@+id/search"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="180dp"
+                    android:layout_marginRight="50dp"
+                    android:background="@drawable/search_bar"
+                    android:ems="10"
+                    android:hint="Pretraga"
+                    app:queryHint="Pretraga"
+                    android:inputType="textPersonName"
+                    android:padding="20dp"
+
+                    android:textColor="@color/white"
+                    android:textColorHint="#FFFFFF"
+
+                    android:popupBackground="@drawable/auto_lista"
+
+                    android:textSize="20sp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/donji_border"
+
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="35dp"
+                android:text="Kategorije"
+                android:textColor="#FFFFFF"
+                android:textSize="36sp"
+                android:textStyle="bold" />
+            <HorizontalScrollView
+
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:stretchColumns="1"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="20dp"
+                    android:paddingRight="50dp"
+                 >
+                <RelativeLayout
+                    android:id="@+id/kaficIkonica"
+                    android:layout_width="95dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/back_pretraga_kategorije"
+                    >
+
+                    <ImageView
+                        android:layout_marginTop="10dp"
+                        android:tag="kafic"
+                        android:id="@+id/kafic"
+android:layout_centerHorizontal="true"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        app:srcCompat="@drawable/ic_coffee_cup"
+                        />
+                    <TextView
+
+                        android:textSize="17sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:layout_marginTop="60dp"
+                        android:text="Kafić"
+                        />
+                </RelativeLayout>
+                    <RelativeLayout
+                        android:id="@+id/pabIkonica"
+                        android:layout_width="95dp"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="20dp"
+                        android:background="@drawable/back_pretraga_kategorije_non"
+                        >
+
+                        <ImageView
+                            android:tag="kafic"
+android:layout_marginTop="10dp"
+                            android:id="@+id/pub"
+                            android:layout_centerHorizontal="true"
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            app:srcCompat="@drawable/ic_beer_non"
+                            />
+                        <TextView
+                            android:textSize="17sp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textColor="@color/white"
+                            android:layout_marginTop="60dp"
+                            android:text="Pub"
+                            />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:id="@+id/klubIkonica"
+                        android:layout_width="95dp"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="20dp"
+                        android:background="@drawable/back_pretraga_kategorije_non"
+                        >
+
+                        <ImageView
+android:layout_marginTop="10dp"
+                            android:id="@+id/klub"
+                            android:layout_centerHorizontal="true"
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            app:srcCompat="@drawable/ic_cocktail_non"
+                            />
+                        <TextView
+                            android:textSize="17sp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textColor="@color/white"
+                            android:layout_marginTop="60dp"
+                            android:text="Klub"
+                            />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:id="@+id/splavIkonica"
+                        android:layout_width="95dp"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="20dp"
+                        android:background="@drawable/back_pretraga_kategorije_non"
+                        >
+
+                        <ImageView
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/splav"
+                            android:layout_centerHorizontal="true"
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            app:srcCompat="@drawable/ic_helm"
+                            />
+                        <TextView
+                            android:textSize="17sp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textColor="@color/white"
+                            android:layout_marginTop="60dp"
+                            android:text="Splav"
+                            />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:id="@+id/kafanaIkonica"
+                        android:layout_width="95dp"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="20dp"
+                        android:background="@drawable/back_pretraga_kategorije_non"
+                        >
+
+                        <ImageView
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/kafana"
+                            android:layout_centerHorizontal="true"
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            app:srcCompat="@drawable/ic_barrel"
+                            />
+                        <TextView
+                            android:textSize="17sp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textColor="@color/white"
+                            android:layout_marginTop="60dp"
+                            android:text="Kafana"
+                            />
+                    </RelativeLayout>
+                </LinearLayout>
+            </HorizontalScrollView  >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/donji_border"
+
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="35dp"
+                android:text="Dogadjaji"
+                android:textColor="#FFFFFF"
+                android:textSize="36sp"
+                android:textStyle="bold" />
+
+             <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/viewHoriz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+             />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/donji_border"
+
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="35dp"
+                android:text="Lokali"
+                android:textColor="#FFFFFF"
+                android:textSize="36sp"
+                android:textStyle="bold" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="70dp"
+
+             />
+        </TableLayout>
+
+</androidx.core.widget.NestedScrollView>
+
+
+
+</RelativeLayout>

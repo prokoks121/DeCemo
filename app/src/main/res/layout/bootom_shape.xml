@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+android:background="@drawable/bottom_background"
+    android:orientation="vertical"
+    android:id="@+id/iskacuciMeni"
+
+    >
+
+
+<LinearLayout
+    android:background="@android:color/transparent"
+android:id="@+id/otvoriKafic"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+
+    >
+
+
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            app:cardBackgroundColor="@color/zelena"
+            app:cardCornerRadius="250dp">
+
+            <androidx.cardview.widget.CardView
+
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                app:cardCornerRadius="250dp">
+
+                <ImageView
+                    android:id="@+id/slikaLokala"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center"
+
+                    tools:srcCompat="@tools:sample/avatars"
+
+                    />
+            </androidx.cardview.widget.CardView>
+
+        </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:background="@android:color/transparent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/imeKafica"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="50dp"
+            android:fontFamily="sans-serif"
+            android:text="Ime kafica"
+            android:textColor="@color/zelena"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/vrsta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/siva"
+            android:textSize="18sp"
+
+            android:text="Vrsta" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:orientation="vertical"
+    android:background="@color/zelena"
+    android:layout_marginTop="5dp">
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginRight="20dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="53dp"
+            android:layout_height="53dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            app:cardBackgroundColor="@color/zelena"
+
+            app:cardCornerRadius="250dp">
+
+            <androidx.cardview.widget.CardView
+
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                app:cardCornerRadius="250dp">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+
+                    android:layout_gravity="center"
+
+                    app:srcCompat="@drawable/telefon" />
+
+
+            </androidx.cardview.widget.CardView>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="85dp"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/naran"
+            android:text="Pozovite"
+            android:fontFamily="sans-serif-black"
+
+            android:textAllCaps="true"
+
+            android:textIsSelectable="false"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp"
+            >
+            <androidx.cardview.widget.CardView
+                android:layout_width="53dp"
+                android:layout_height="53dp"
+android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="@color/zelena"
+
+                app:cardCornerRadius="250dp">
+
+                <androidx.cardview.widget.CardView
+
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    app:cardCornerRadius="250dp">
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="40dp"
+                        android:layout_gravity="center"
+
+                        android:layout_height="40dp"
+                        app:srcCompat="@drawable/ic_baseline_share_24" />
+
+
+                </androidx.cardview.widget.CardView>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="85dp"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="sans-serif-black"
+                android:text="DELI MESTO"
+                android:textAllCaps="true"
+                android:textColor="@color/naran"
+                android:textIsSelectable="false"
+                android:textStyle="bold" />
+    </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="20dp"
+
+        android:background="#43AAA8A8"
+        android:layout_marginTop="5dp">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/adresaImg"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="5dp"
+                app:srcCompat="@drawable/ic_baseline_location_on_24" />
+
+            <TextView
+                android:id="@+id/adresa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="12dp"
+                android:text="Adresa"
+                android:textColor="#373737"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="#43AAA8A8"
+            android:layout_marginHorizontal="20dp"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/clock"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="5dp"
+                app:srcCompat="@drawable/ic_baseline_access_time_24" />
+
+            <TextView
+                android:id="@+id/radnoVreme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="12dp"
+                android:textColor="#373737"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:text="Radno vreme" />
+            <TextView
+                android:id="@+id/vremePr"
+                android:text="Otvoreno"
+                android:layout_marginLeft="20dp"
+                android:textColor="#7EDF0E"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_marginTop="12dp"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginHorizontal="20dp"
+
+            android:background="#43AAA8A8"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/phone"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="5dp"
+                app:srcCompat="@drawable/telefon" />
+
+            <TextView
+                android:id="@+id/telefon1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="12dp"
+                android:textColor="#373737"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:text="Broj Telefona" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginHorizontal="20dp"
+
+            android:background="#43AAA8A8"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
